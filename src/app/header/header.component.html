@@ -1,0 +1,7 @@
+<div class="body">
+    <h1> <b>User group: </b><span> {{groupService.title}}</span></h1>
+    <div class="edit-body">
+        <input [value]="groupService.nameInputValue"  (input)="groupService.onName($event)" type="text" placeholder="Write new group name"#name>
+        <button type="button" (click)="groupService.changeName(name.value)" class="network">Edit</button>
+    </div>
+</div>
